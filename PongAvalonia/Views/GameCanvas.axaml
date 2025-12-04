@@ -1,0 +1,41 @@
+<UserControl
+    xmlns="https://github.com/avaloniaui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:vm="clr-namespace:PongAvalonia.ViewModels"
+    x:Class="PongAvalonia.Views.GameCanvas"
+    Focusable="True">
+
+    <Grid>
+        <!-- Left Score -->
+        <TextBlock Name="LeftScoreText"
+                   FontSize="48" 
+                   Foreground="White" 
+                   HorizontalAlignment="Left" 
+                   Margin="50,20,0,0" />
+
+        <!-- Right Score -->
+        <TextBlock Name="RightScoreText"
+                   FontSize="48" 
+                   Foreground="White" 
+                   HorizontalAlignment="Right" 
+                   Margin="0,20,50,0"/>
+
+        <!-- Winner Message -->
+        <TextBlock Name="WinnerText"
+                   FontSize="36"
+                   Foreground="Yellow"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Top"
+                   Margin="0,100,0,0"/>
+
+        <!-- Play Again Button -->
+        <Button Name="PlayAgainButton"
+                Content="Play Again"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                Width="150"
+                Height="50"
+                Click="PlayAgainButton_Click"
+                IsVisible="False"/>
+    </Grid>
+</UserControl>
